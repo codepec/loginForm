@@ -1,0 +1,129 @@
+body {
+
+    background-color: rgb(55, 69, 87);
+    margin: 0;
+    padding:0;
+    font-family: sans-serif;
+    
+
+
+}
+
+
+.box {
+    
+    width:300px;
+    padding:40px;
+    position:absolute;
+   
+    left:50%;
+    transform: translate(-50%,50%);
+    background-color: #191919;
+    text-align: center;
+
+}
+
+.box h1{
+    color:white;
+    text-transform:uppercase;
+    font-weight: 500;
+}
+
+.box input[type = "text"],.box input[type="password"]{
+    border:0;
+    background:none;
+    display:block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid rgb(55, 69, 87);
+    padding: 14px 10px;
+    width: 200px;
+    outline: none;
+    color: white;
+    border-radius: 25px;
+    transition: 0.25s;
+}
+
+
+.box input[type = "text"]:focus,.box input[type="password"]:focus{
+    width:280px;
+    border-color:lawngreen;
+}
+.box input[type = "submit"]{
+    border:0;
+    background:none;
+    display:block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid rgb(55, 69, 87);
+    padding: 14px 40px;
+    
+    outline: none;
+    color: white;
+    border-radius: 25px;
+    transition: 0.25s;
+    cursor:pointer;
+}
+
+.box input[type = "submit"]:hover{
+    background-color: lawngreen;
+    color:black;
+}
+
+
+/*
+#username{
+
+    border:1px solid lawngreen;
+    border-radius: 25px;
+    padding:10px;
+    margin:5px;
+  
+}
+
+#password{
+
+    border:1px solid rgb(0, 130, 252);
+    border-radius: 25px;
+    padding:10px;
+    margin:5px;
+  
+}
+
+#password:active{
+    border-style: none;
+}
+
+#signInButton{
+
+    border:1px solid lawngreen;
+    border-radius: 25px;
+    padding:10px;
+    max-width:100px;
+    cursor:pointer;
+    margin:5px;
+    width:50%;
+  
+}
+
+#signInButton:hover{
+
+    background-color: greenyellow;
+    
+}
+  */
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: gray;
+    opacity: 0.5;
+  }
+  
+  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: gray;
+    opacity: 0.5;
+  }
+  
+  ::-ms-input-placeholder { /* Microsoft Edge */
+    color: gray;
+    opacity: 0.5;
+  }
+
