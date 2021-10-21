@@ -1,9 +1,11 @@
 <?php
 
-$dbhost = "localhost";
-$dbuser = "root";
-$dbpass = "";
-$dbname = "login_sample_db";
+
+
+$dbhost = "sql11.freesqldatabase.com",
+$dbuser = "sql11445883",
+$dbpass = "bYQEI4DVwu",
+$dbname = "sql11445883",
 
 if(!$con = mysqli_connect($dbhost,$dbuser,$dbpass,$dbname))
 {
