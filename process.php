@@ -1,4 +1,8 @@
 <?php 
+
+
+    echo '<script>alert("Welcome to CodePec")</script>';
+
     // Get valuespasse from form in login.php file
     $username = $_POST['username'];
     $password = $_POST['password'];
