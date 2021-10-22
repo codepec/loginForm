@@ -14,7 +14,7 @@
     $dbhost = "sql11.freesqldatabase.com",
     $dbuser = "sql11445883",
     $dbpass = "bYQEI4DVwu",
-    $dbname = "login",
+    $dbname = "sql11445883",
     
     $conn = new mysqli($dbhost,$dbuser,$dbpass,$dbname);
    
@@ -23,8 +23,8 @@
 		echo "$conn->connect_error";
 		die("Connection Failed : ". $conn->connect_error);
 	} else {
-		$stmt = $conn->prepare("insert into registration(firstName, lastName, gender, email, password, number) values(?, ?, ?, ?, ?, ?)");
-		$stmt->bind_param("sssssi", $firstName, $lastName, $gender, $email, $password, $number);
+		$stmt = $conn->prepare("insert into registration(username, password) values(?, ?)");
+		$stmt->bind_param($username, $password);
 		$execval = $stmt->execute();
 		echo $execval;
 		echo "Registration successfully...";
